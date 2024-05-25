@@ -1,0 +1,237 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.section__container, .projects {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+@media (max-width: 600px) {
+  .section__container, .projects {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    max-width: 90%;
+  }
+}
+
+.app__work-filter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.app__work-filter .app__work-filter-item {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  position: relative;
+  background-clip: padding-box;
+  border: solid 3px transparent;
+  background-color: #0f1624;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+@media (max-width: 450px) {
+  .app__work-filter .app__work-filter-item {
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+  }
+}
+.app__work-filter .app__work-filter-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: #00dbd8;
+}
+.app__work-filter .app__work-filter-item:hover {
+  background-color: #00dbd8;
+  color: #fff;
+}
+@media screen and (min-width: 2000px) {
+  .app__work-filter .app__work-filter-item {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
+}
+.app__work-filter .item-active {
+  background-color: #00dbd8;
+  color: #fff;
+}
+
+.app__work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.app__work-portfolio .app__work-item {
+  width: 360px;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+  .app__work-portfolio .app__work-item {
+    width: 280px;
+  }
+}
+@media (max-width: 800px) {
+  .app__work-portfolio .app__work-item {
+    width: 400px;
+  }
+}
+.app__work-portfolio .app__work-item:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+}
+@media screen and (min-width: 2000px) {
+  .app__work-portfolio .app__work-item {
+    width: 470px;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .app__work-portfolio .app__work-item {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+
+.app__work-img {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+.app__work-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 2000px) {
+  .app__work-img {
+    height: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .app__work-img {
+    height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .app__work-img {
+    height: 270px;
+  }
+}
+@media (max-width: 600px) {
+  .app__work-img {
+    height: 200px;
+  }
+}
+
+.app__work-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.app__work-hover div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 1rem;
+  font-family: var(--font-base);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.app__work-hover div svg {
+  width: 50%;
+  height: 50%;
+  color: var(--white-color);
+}
+
+.app__work-content {
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+.app__work-content h4 {
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 2000px) {
+  .app__work-content h4 {
+    margin-top: 3rem;
+  }
+}
+.app__work-content .app__work-tag {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #0f1624;
+  color: #fff;
+  top: -25px;
+}/*# sourceMappingURL=Projects.css.map */

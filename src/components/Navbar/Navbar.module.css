@@ -1,0 +1,198 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.section__container {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+@media (max-width: 600px) {
+  .section__container {
+    max-width: 85%;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 8.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  background-color: #0f1624;
+  z-index: 1000;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.075);
+  position: fixed;
+  /*************************************************/
+  /**                    Logo                     **/
+  /*************************************************/
+  /*************************************************/
+  /**                    List                     **/
+  /*************************************************/
+  /*************************************************/
+  /**                    Links animation          **/
+  /*************************************************/
+}
+.nav .icon {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.nav__logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 5rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.nav__logo-container {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.nav__logo img {
+  max-height: 100%;
+  cursor: pointer;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  cursor: pointer;
+}
+.nav__item a {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  background-image: linear-gradient(to right, #00dbd8, #00dbd8 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.nav__item a:hover {
+  background-position: 0;
+}
+.nav__item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #00dbd8;
+  bottom: -6px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav__item a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*************************************************/
+/**                Mobil navigation             **/
+/*************************************************/
+@media (max-width: 991px) {
+  .nav {
+    position: fixed;
+  }
+  .nav__list {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 8.4rem);
+    top: 8.4rem;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8rem;
+    background-color: #0f1624;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  }
+  .nav__item {
+    z-index: 5;
+  }
+  .nav__list--active {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .nav .icon {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    height: 6.4rem;
+  }
+  .nav__list {
+    top: 6.4rem;
+    height: calc(100vh - 6.4rem);
+    gap: 7rem;
+  }
+  .nav__logo {
+    width: 5rem;
+  }
+  .nav__item a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-height: 530px) {
+  ul.nav__list {
+    gap: 3rem;
+    color: #000;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

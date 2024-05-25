@@ -14,7 +14,10 @@ import css from "../../assets/skills/css.png";
 import javascript from "../../assets/skills/javascript.png";
 import node from "../../assets/skills/node.png";
 import nextJs from "../../assets/skills/nextjs.png";
-import firebase from "../../assets/skills/firebase.png";
+import git from "../../assets/skills/git.png";
+import docker from "../../assets/skills/docker.png";
+import TypeScript from "../../assets/skills/typescript.png";
+import tailwind from "../../assets/skills/tailwind.png";
 import aws from "../../assets/skills/aws.png";
 
 import { motion, useSpring } from "framer-motion";
@@ -31,83 +34,19 @@ const transition = {
 const Skills = () => {
   const certificates = [
     {
-      skill: "Programming",
-      src: "https://drive.google.com/file/d/10N1qTMHhdSsbm7eJmBzXnS3mK_IUPCRx/view?usp=sharing",
+      skill: "Bachelor of Computer Science Helwan University",
+      src: "",
       id: "1-a",
       certificate: [
         {
           id: "1",
           name: "Programming foundation",
-          company: "LinkedIn",
-          desc: "A series of 10 course that taught me a lot of the things such as programming fundamentals, object oriented design, data structures, Algorithms, design patterns and much more",
+          company: "Helwan University",
+          desc: "",
         },
       ],
     },
-    {
-      skill: "HTML & CSS",
-      src: "https://drive.google.com/file/d/1i7_y9xUG1oQyBhnEjTSvgf9OkYU5ar6e/view?usp=sharing",
-      id: "2-b",
-      certificate: [
-        {
-          id: "2",
-          name: "Build Responsive Real-World Website With HTML & CSS",
-          company: "Udemy",
-          desc: "In the 40 hour course I learned a lot of thing about HTML & CSS starting from the basics and into more advanced topics. I mastered using flex-box and grid layout. I practiced what I learned by making amazing websites",
-        },
-      ],
-    },
-    {
-      skill: "Java Script",
-      src: "https://www.udemy.com/certificate/UC-f32afeb5-246e-4073-a57d-b26844a095b9/",
-      id: "3-c",
-      certificate: [
-        {
-          id: "3",
-          name: "The Complete JavaScript Course 2022: From Zero to Expert!",
-          company: "Udemy",
-          desc: "In the 70 hour course I learned all about java script starting from the basics and into more advanced topics. I learned the fundamentals of the language then I learned the OOP and the data structure of the language. I learned how to deal with APIs and asynchronous javaScript. I practiced what I learned by making more complex website with a lot of functionalities",
-        },
-      ],
-    },
-    {
-      skill: "ReactJs",
-      src: "https://ude.my/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf",
-      id: "4-d",
-      certificate: [
-        {
-          id: "4",
-          name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
-          company: "Udemy",
-          desc: "In the 48 hour course I learned all about React-js starting from the basics and into more advanced topics. I learned the JSX syntax then I learned hot to use react hooks. I dived into a lot of various topic and learned it like React Router, Redux, Nextjs frame work, typeScript and much more. I practice what I learned by making powerful websites that use the power of react to achieve better UI",
-        },
-      ],
-    },
-    {
-      skill: "NodeJS",
-      src: "https://www.udemy.com/certificate/UC-a9222dec-c428-423b-9a8d-7527ce09aba6/",
-      id: "5-e",
-      certificate: [
-        {
-          id: "5",
-          name: "The Complete Node.js Developer Course (3rd Edition) ",
-          company: "Udemy",
-          desc: "In the 35 hour course I learned all about Node-js starting from the basics and into more advanced topics. I learned  how to use Apis and async javaScript. I learned how to create and serve web application using express. I learned how to make REST API and make API endpoints. I learned how to use Socket.io for creating socket apps. I practiced what i learned by making 3 apps (chat app - weather app - notes app).",
-        },
-      ],
-    },
-    {
-      skill: "AWS",
-      src: "https://verify.acloud.guru/8678E84CA8A9",
-      id: "6-f",
-      certificate: [
-        {
-          id: "6",
-          name: "AWS Certified Cloud Practitioner (CLF-C01)",
-          company: "Acloud guru",
-          desc: "In the 45 hour course I learned all about AWS starting from the basics and into more advanced topics. ",
-        },
-      ],
-    },
+
   ];
 
   return (
@@ -131,6 +70,12 @@ const Skills = () => {
               <img src={css} alt="css" />
             </div>
             <p className="skill-name">CSS</p>
+          </div>
+          <div className="skills__item app__flex">
+            <div className="app__flex">
+              <img src={tailwind} alt="css" />
+            </div>
+            <p className="skill-name">Tailwind</p>
           </div>
           <div className="skills__item app__flex">
             <div className="app__flex">
@@ -168,15 +113,28 @@ const Skills = () => {
             </div>
             <p className="skill-name">NodeJs</p>
           </div>
-          {/* <div className="skills__item app__flex">
+     
+          <div className="skills__item app__flex">
             <div className="app__flex">
-              <img src={aws} alt="aws" />
+              <img src={docker} alt="aws" />
             </div>
-            <p className="skill-name">AWS</p>
-          </div> */}
+            <p className="skill-name">Docker</p>
+          </div>
+          <div className="skills__item app__flex">
+            <div className="app__flex">
+              <img src={TypeScript} alt="aws" />
+            </div>
+            <p className="skill-name">TypeScript</p>
+          </div>
+          <div className="skills__item app__flex">
+            <div className="app__flex">
+              <img src={git} alt="aws" />
+            </div>
+            <p className="skill-name">git</p>
+          </div>
         </div>
 
-        {/* <div className="skills-certificates">
+        <div className="skills-certificates">
           {certificates.map((certificate) => {
             return (
               <div key={certificate.id} className="skills-cer">
@@ -217,7 +175,7 @@ const Skills = () => {
               </div>
             );
           })}
-        </div> */}
+        </div>
       </div>
     </motion.section>
   );

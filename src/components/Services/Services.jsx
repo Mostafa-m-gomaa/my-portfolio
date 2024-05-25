@@ -20,7 +20,7 @@ const Services = () => {
         <div className={classes["services__text-box"]}>
           <p>
             I know that good development means good business So I keen to make
-            consistent, efficient and powerful full-stack websites with fully
+            consistent, efficient and powerful front end developer create websites with fully
             functional and user friendly user interface that will empower your
             business
           </p>
@@ -56,7 +56,7 @@ const Services = () => {
               emoji={<FcAcceptDatabase fontSize="100px" />}
               heading={"Back-end"}
               detail={
-                "I'am a Backend developer with a passion for building server side web applications"
+                "I'am a fully compatable eith the back end technologies and api "
               }
             />
           </motion.div>

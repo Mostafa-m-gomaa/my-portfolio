@@ -3,20 +3,13 @@ import SectionTitle from "../UI/SectionTitle";
 import { Fragment, useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import cvWebsite from "../../assets/projects-images/CV-website.png";
-import omnifood from "../../assets/projects-images/Omnifood.png";
-import forkify from "../../assets/projects-images/forkify.png";
-import pigGame from "../../assets/projects-images/Pig-Game.png";
-import bankist from "../../assets/projects-images/Bankist.png";
-import bankistWebsite from "../../assets/projects-images/bankist-website.png";
-import mapty from "../../assets/projects-images/mapty.png";
-import kasper from "../../assets/projects-images/Kasper.png";
-import passwords from "../../assets/projects-images/passwords.png";
-import leon from "../../assets/projects-images/Leon.png";
-import chat from "../../assets/projects-images/chat.png";
-import weather from "../../assets/projects-images/weather-app.png";
-import sst from "../../assets/projects-images/sst.png";
-import productivity from "../../assets/projects-images/productivity-zone.png";
+import newNormal from "../../assets/projects-images/newNormal.png";
+import sanad from "../../assets/projects-images/sanad.png";
+import edaat from "../../assets/projects-images/edaat.png";
+import hamad from "../../assets/projects-images/hamad.png";
+import yes from "../../assets/projects-images/yesWeCan.png";
+import wealth from "../../assets/projects-images/wealth.png";
+import edu from "../../assets/projects-images/edu.png";
 import hero from '../../assets/images/hero.png'
 import Xo from '../../assets/images/Untitled.png'
 import weatheri from '../../assets/images/weather.png'
@@ -42,21 +35,74 @@ const Projects = () => {
 
   const works = [
     {
-      title: "Portfolio for my work",
+      title: "Wealth Makers",
       description:
-        " A website that represent my  latest work and how to contact me",
-      projectLink: "https://mostafa-m-gomaa.github.io/my-last-porto/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/my-last-porto",
-      img: port,
-      tags: ["JavaScript", "ALL"],
+        "The project is a platform that offers courses, bots, and recommendations in the field of trading. It has a network marketing system called the tree system, a marketing method that relies on users.",
+      projectLink:
+        "https://www.wealthmakers-fx.com/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: wealth,
+      tags: ["React", "Recent"],
     },
     {
-      title: "omnifood",
-      description: "A restaurant website land page has an awesome design",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/omnifood/",
-      codeLink: "https://github.com/Mostafa-m-gomaa",
-      img: omnifood,
-      tags: ["HTML & CSS", "ALL"],
+      title: "New Normal",
+      description:
+        "The project is a platform that offers courses, bots, and recommendations in the field of trading. It has a network marketing system called the tree system, a marketing method that relies on users.",
+      projectLink:
+        "https://thenewnormal.trade/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: newNormal,
+      tags: ["React", "Recent"],
+    },
+    {
+      title: "Edaat",
+      description:
+        "This project is for a magazine  and it is designed to broadcast the latest issues.",
+      projectLink:
+        "https://lightsjournal.website/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: edaat,
+      tags: ["React", "Recent"],
+    },
+    {
+      title: "Hamad Alazzani",
+      description:
+        "This website facilitates travel procedures and document submission for any student who wants to pursue a PhD, Master's degree, or any other study in Europe.",
+      projectLink:
+        "https://www.hamad-edu.com/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: hamad,
+      tags: ["React", "Recent"],
+    },
+    {
+      title: "Welo",
+      description:
+        "This project relies on an API provided by an external company that offers specific courses with a monthly subscription. Those who subscribe to this API can sell the courses it provides. We display the data returned from the company's API, implemented a user database, and created our own payment system to handle orders. ",
+      projectLink:
+        "https://edu.welo.org.uk/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: edu,
+      tags: ["React", "Recent"],
+    },
+    {
+      title: "Yes We Can",
+      description:
+        "This is a system for an organization that works on modifying human behaviors. Through this system, you can conduct tests on the treated individual by having their close associates answer some questions to verify whether the person's behavior has truly been modified.",
+      projectLink:
+        "https://benaa-test.com/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: yes,
+      tags: ["React", "Recent"],
+    },
+    {
+      title: "Sand",
+      description:
+        "This project is a platform for selling legal contracts in Saudi Arabia.",
+      projectLink:
+        "https://sanad-legal.com/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: sanad,
+      tags: ["React", "Recent"],
     },
     {
       title: "Fit Club",
@@ -66,113 +112,7 @@ const Projects = () => {
         "https://mostafa-m-gomaa.github.io/Fit-Club/",
       codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
       img: hero,
-      tags: ["React", "ALL"],
-    },
-    {
-      title: "X-O Game",
-      description: "tic tac toe game based on react js , sass",
-      projectLink: "https://mostafa-m-gomaa.github.io/XO-Game/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/XO-Game",
-      img: Xo,
-      tags: ["React", "ALL"],
-    },
-    {
-      title: "Weather app",
-      description: "A simple app that allows you to the weather at any country in the world",
-      projectLink:
-        "https://mostafa-m-gomaa.github.io/weather-app/",
-      codeLink:
-        "https://github.com/Mostafa-m-gomaa/weather-app",
-      img: weatheri,
-      tags: ["React", "ALL"],
-    },
-    {
-      title: "To do App",
-      description: "A simple app that allows note any thing and delete it at any time",
-      projectLink:
-        "https://mostafa-m-gomaa.github.io/student-sign-app/",
-      codeLink:
-        "https://github.com/Mostafa-m-gomaa/student-sign-app",
-      img: todo,
-      tags: ["React", "ALL"],
-    },
-    {
-      title: "Crepto",
-      description:
-        "A small project that show you that u can change the color of all the website by one click",
-      projectLink: "https://mostafa-m-gomaa.github.io/vanilla-javascirpt/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/vanilla-javascirpt",
-      img: crepto,
-      tags: ["JavaScript", "ALL"],
-    },
-    {
-      title: "speed test game",
-      description: "A simple game that test your speed at wiriting",
-      projectLink: "https://mostafa-m-gomaa.github.io/speed-test-game/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/speed-test-game",
-      img: speed,
-      tags: ["JavaScript", "ALL"],
-    },
-    {
-      title: "Weather App",
-      description:
-        "A weather app allows you to get the weather in your current location",
-      projectLink: "https://abdelrahman-node-weather-app-2.herokuapp.com/",
-      codeLink:
-        "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Weather-App",
-      img: weather,
-      tags: ["NodeJs", "ALL"],
-    },
-    {
-      title: "Chat app",
-      description:
-        "A Chat app allows you to chat with your friends in chat rooms",
-      projectLink: "https://abdelrahman-chat-app.herokuapp.com",
-      codeLink:
-        "https://github.com/Mostafa-m-gomaa",
-      img: chat,
-      tags: ["NodeJs", "ALL"],
-    },
-    {
-      title: "To-DO APP",
-      description: "A simple web application that make schedule your asks",
-      projectLink: "https://mostafa-m-gomaa.github.io/To-Do-App/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/To-Do-App",
-      img: oodo,
-      tags: ["JavaScript", "ALL"],
-    },
-
-    {
-      title: "Creatives Agency",
-      description: "A simple website for marketing agency",
-      projectLink: "https://mostafa-m-gomaa.github.io/SpecialDesign/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/SpecialDesign",
-      img: creative,
-      tags: ["JavaScript", "ALL"],
-    },
-    {
-      title: "Kasper",
-      description: "An HTMl & CSS land page template",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/kasper/",
-      codeLink: "https://github.com/Mostafa-m-gomaa",
-      img: kasper,
-      tags: ["HTML & CSS", "ALL"],
-    },
-    {
-      title: "html&css design",
-      description: "An HTMl & CSS design that represent my skills at it",
-      projectLink: "https://mostafa-m-gomaa.github.io/new-design-/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/new-design-",
-      img: htm,
-      tags: ["HTML & CSS", "ALL"],
-    },
-    {
-      title: "CV website",
-      description: "A simple website cv that represent my skills at html and css",
-      projectLink: "https://mostafa-m-gomaa.github.io/mostafagomaa/",
-      codeLink: "https://github.com/Mostafa-m-gomaa/mostafagomaa",
-      img: cvs,
-      tags: ["HTML & CSS", "ALL"],
+      tags: ["React", "Recent"],
     },
   ];
 
@@ -196,7 +136,7 @@ const Projects = () => {
       <SectionTitle>projects</SectionTitle>
       <div className="projects">
         <div className="app__work-filter">
-          {["All", "React", "JavaScript", "HTML & CSS"].map(
+          {["Recent", "React"].map(
             (item, index) => {
               return (
                 <div
@@ -244,7 +184,7 @@ const Projects = () => {
                       <AiFillEye />
                     </motion.div>
                   </a>
-                  <a
+                  {/* <a
                     href={isSmallScreen ? work.projectLink : work.codeLink}
                     target="_blank"
                     rel="noreferrer"
@@ -259,7 +199,7 @@ const Projects = () => {
                     >
                       <AiFillGithub />
                     </motion.div>
-                  </a>
+                  </a> */}
                 </motion.div>
               </div>
 
