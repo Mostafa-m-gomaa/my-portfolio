@@ -25,12 +25,12 @@ const Services = () => {
             business
           </p>
           <a
-            href="Mostafa_gomaa_front_end_developer.pdf"
+            href="https://drive.google.com/file/d/13ytKvcSZCBUWeGiFPfmSRu3xNBZA0g2s/view?usp=sharing"
             target="_blank"
             className={`${classes["services__button"]}`}
-            download
+           
           >
-            Download CV
+            CV
           </a>
         </div>
         <div className={classes["services__cards-container"]}>
