@@ -11,16 +11,8 @@ import yes from "../../assets/projects-images/yesWeCan.png";
 import wealth from "../../assets/projects-images/wealth.png";
 import edu from "../../assets/projects-images/edu.png";
 import hero from '../../assets/images/hero.png'
-import Xo from '../../assets/images/Untitled.png'
-import weatheri from '../../assets/images/weather.png'
-import todo from '../../assets/images/todo.png'
-import port from '../../assets/images/port.png'
-import crepto from '../../assets/images/crepto.png'
-import speed from '../../assets/images/speed.png'
-import oodo from '../../assets/images/toodo.png'
-import htm from '../../assets/images/htm.png'
-import cvs from '../../assets/images/cvs.png'
-import creative from '../../assets/images/creative.png'
+import durra from '../../assets/Screenshot 2025-05-23 173119.png'
+
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -45,13 +37,13 @@ const Projects = () => {
       tags: ["React", "Recent"],
     },
     {
-      title: "New Normal",
+      title: "Durra",
       description:
-        "The project is a platform that offers courses, bots, and recommendations in the field of trading. It has a network marketing system called the tree system, a marketing method that relies on users.",
+        "The project is a platform that offers jewels ",
       projectLink:
-        "https://thenewnormal.trade/",
+        "https://durra.vercel.app/",
       codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
-      img: newNormal,
+      img: durra,
       tags: ["React", "Recent"],
     },
     {
